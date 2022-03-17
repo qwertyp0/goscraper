@@ -121,7 +121,7 @@ func (scraper *Scraper) getDocument() (*Document, error) {
 	if err != nil {
 		return nil, err
 	}
-	req.Header.Add("User-Agent", "GoScraper")
+	req.Header.Add("User-Agent", "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36")
 
 	resp, err := http.DefaultClient.Do(req)
 	if resp != nil {
