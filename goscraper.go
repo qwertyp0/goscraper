@@ -35,6 +35,7 @@ type DocumentPreview struct {
 	Title       string
 	Description string
 	Images      []string
+	OGImage     string
 	Link        string
 }
 
@@ -260,7 +261,7 @@ func (scraper *Scraper) parseDocument(doc *Document) error {
 				}
 
 				doc.Preview.Images = []string{ogImgUrl.String()}
-
+				doc.Preview.OGImage = ogImgUrl.String()
 			}
 
 		case "title":
