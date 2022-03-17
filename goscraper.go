@@ -17,7 +17,7 @@ var (
 	EscapedFragment string = "_escaped_fragment_="
 	fragmentRegexp         = regexp.MustCompile("#!(.*)")
 )
-
+ 
 type Scraper struct {
 	Url                *url.URL
 	EscapedFragmentUrl *url.URL
